@@ -15,6 +15,9 @@ pub fn route_stage() -> AdHoc {
                     product::delete
                 ],
             )
-            .mount("/notification", routes![notification::susbcribe])
+            .mount(
+                "/notification",
+                routes![notification::susbcribe, notification::unsubscribe],
+            )
     });
 }
