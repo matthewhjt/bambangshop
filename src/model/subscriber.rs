@@ -7,7 +7,7 @@ use rocket::tokio;
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(crate = "rocket::serde")]
-pub struct Subscribe {
+pub struct Subscriber {
     pub url: String,
     pub name: String,
 }
